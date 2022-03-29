@@ -1,144 +1,9 @@
-/*
-=========
-PROBLEM 1
-=========
-
-You are provided with a number, "N". Find its factorial.
-Input Description: 
-A positive integer is provided as an input.
-Output Description: 
-Print the factorial of the integer.
-Sample Input :
-5
-Sample Output :
-120
-*/
-
-var factorial = 5;
-var number = 1;
-
-for (var i = 1; i <= factorial; i++) {
-    number = number * i
-}
-
-console.log(number)
-
-
-/*
-=========
-PROBLEM 2
-=========
-
-You are given with a number "N", find its cube.
-Input Description:
-A positive integer is provided as an input.
-Output Description:
-Find the cube of the number.
-Sample Input :
-2
-Sample Output :
-8
-*/
-
-
-
-function cube(n) {
-    console.log(n * n * n)
-}
-cube(2)
-
-/*
-=========
-PROBLEM 3
-=========
-
-The area of an equilateral triangle is ¼(√3a2) where "a" represents a side of the
-triangle. You are provided with the side "a". Find the area of the equilateral triangle.
-Input Description:
-The side of an equilateral triangle is provided as the input.
-Output Description:
-Find the area of the equilateral triangle and print the answer up to 2 decimal places
-after rounding off.
-Sample Input :
-20
-Sample Output :
-173.21 
-*/
  
-function triangle(a){
-    return (Math.sqrt(3))*(a*a)/4;
-}
- 
-let triangleside = triangle(20)
-console.log(triangleside)
  
 
-173.20508075688772
+ 
 
-/*
-=========
-PROBLEM 4
-=========
-
-You will be provided with a number. Print the number of days in the month
-corresponding to that number.
-Note: In case the input is February, print 28 days. If the Input is not in valid range
-print "Error".
-Input Description:
-Input n -> month number
-Output Description:
-Find the days in the month corresponding to the input number. Print Error if the input
-is not in a valid range.
-Sample Input :
-8
-Sample Output :
-31
-*/
-
-var sun = 8;
-
-switch (sun) {
-    case 1:
-        console.log("31");
-        break;
-    case 2:
-        console.log("28");
-        break;
-    case 3:
-        console.log("31");
-        break;
-    case 4:
-        console.log("30")
-        break;
-    case 5:
-        console.log("31")
-        break;
-    case 6:
-        console.log("30")
-        break;
-    case 7:
-        console.log("31")
-        break;
-    case 8:
-        console.log("31")
-        break;
-    case 9:
-        console.log("30")
-        break;
-    case 10:
-        console.log("31")
-        break;
-    case 11:
-        console.log("30")
-        break;
-    case 12:
-        console.log("31")
-        break;
-    default:
-        console.log("Error")
-        break;
-}
-
+ 
 /*
 =========
 PROBLEM 5
@@ -158,10 +23,6 @@ Sample Output:
 53.60 
 */
 
-function Fahrenheit(celcius){
-    console.log((celcius*1.8)+ 32);
-}
-Fahrenheit(12)
 
 /*
 =========
@@ -178,77 +39,12 @@ Sample Input :
 Sample Output : 55
 */
 
-var plush = 10;
-var numberOne = 0;
-
-for(let c = 1;  c <= plush; c++){
-    numberOne = numberOne + c;
-    
-}
-console.log(numberOne);
 
 /*
 
-=========
-PROBLEM 7 
-=========
+ 
+ 
 
-You are provided with a number "N", Find the Nth term of the series: 1 , 4, 9, 16, 25,
-36, 49, 64, 81, .......
-(Print "Error" if N = negative value and 0 if N = 0).
-Input Description:
-An integer N is provided to you as the input.
-Output Description:
-Find the Nth term in the provided series.
-Sample Input :
-18
-Sample Output :
-324
-
-*/
-
-let nthArray = [1 , 4, 9, 16, 25, 36, 49, 64, 81, 100]
-
-function nthTerm(number){
-    if(number <= 0){
-        console.log("Error")
-    }
-    else{
-        let term
-        term = number*number
-        console.log(term)
-    }
-  }
-nthTerm(18)
-  
-
-
-/*
-=========
-PROBLEM 8
-=========
-- Let "A" be a string. Remove all the whitespaces and find it's length.
-(Print "Error" if N = negative value and 0 if N = 0).
-Input Description: 
-A string is provide as an input
-Output Description: 
-Remove all the whitespaces and then print the length of the remaining string.
-Sample Input :
-Lorem Ipsum
-Sample Output :
-10
-*/
-
-
-let string = "Lorem Ipsum";
-
-    
-if(string <= 0){
-    console.log("Error")
-}
-else{
-    console.log((string.replace(/\s/g,'').length))
-}
     
 
 /*
@@ -277,20 +73,7 @@ Sample Output:
 */
 
       
-function validate() {
-        
-    var a = 1;
-    var b = 5;
-    var c = 6;
 
-            
-    var x1 = (-b + Math.sqrt(Math.pow(b, 2) - 4 * a * c)) / (2 * a);
-    var x2 = (-b - Math.sqrt(Math.pow(b, 2) - 4 * a * c)) / (2 * a);
-            
-           console.log(x1, x2);
-}
-
-validate()
 
 
 /*
@@ -312,17 +95,7 @@ Sample Input :
 Sample Output :
 1 9 3 44 6 */
 
-let keys = [5, 3, 9, 1, 44, 6]
 
-let keysArray = keys.filter((value)=>{
-    if( value % 2 === 0){
-        return true;
-    }else{
-        return false;
-    }
-})
-
-console.log(keysArray)
 
 /*
 ==========
@@ -340,37 +113,7 @@ OUTPUT
 4 3 8 7
 */
 
-let n = 5;
-let array = [3, 3, 4, 4, 7, 8] 
 
-let hash = {};
-array.forEach(element => {
-    if(hash[element]){
-        hash[element]++
-    }else{
-        hash[element] = 1
-    }
-})
-
-console.log(hash)
-
-let elements = []
-
-for(let key in hash){
-    elements.push({
-        key: key,
-        value: hash[key]
-    })
-}
-
-const storedbyArray = elements.sort((a, b) => {
-    if(a.value == b.value){
-        return b.key -a.key
-    }
-    return b.value - a.value
-}).forEach(ele => {
-    console.log(ele.key)
-})
 
 
 /*
@@ -391,30 +134,7 @@ Sample Output :
 */
 
 
-function Palnum(){
 
-    var final = 0;
-    var number = 5;
-
-    temp = number;
-
-    while(number>0) {
-
-        rem = number%10;
-        number = parseInt(number/10);
-        final = final*10+rem;
-    }
-
-    if(final==temp) {
-
-        console.log(final);
-    }
-    else{
-        console.log("not palindrome");
-    }
- }
-
-Palnum()
 
 /*
 ==========
@@ -434,17 +154,6 @@ Sample Output :
  */
 
   
-// let nthArray = [1 , 4, 9, 16, 25, 36, 49, 64, 81, 100]
- 
-
-function nthTerm(number){
-    
-    for(i = 1; i <= number; i++){
-        
-        console.log(s = (i*i) +i)
-    }
-  }
-nthTerm(5)
 
  
  /*
@@ -464,20 +173,6 @@ Sample Output :
 
 */
 
-
-let o = 7;
-let k = 3;
-let arraytwo = [1, 2, 3, 4, 5, 6, 7]
-
-
-for(let j = 1; j <= k; j++){
-    let temp = arraytwo[0];
-    for(let i = 0; i < o - 1; i++){
-        arraytwo[i] = arraytwo[i + 1]
-    }
-    arraytwo[o - 1] = temp;
-}
-console.log(arraytwo)
 
 
 
